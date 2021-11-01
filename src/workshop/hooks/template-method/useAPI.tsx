@@ -41,12 +41,12 @@ export default function useAPI<PARAMS, RESPONSE>(config: Config<PARAMS, RESPONSE
                 setLoading(true)
                 const response = await config.callback(params)
                 setResponse(response)
-                setLoading(false)
 
             } catch (error) {
                 setError(error)
-                setLoading(false)
             }
+
+            setLoading(false)
 
         }
         asyncRequest()

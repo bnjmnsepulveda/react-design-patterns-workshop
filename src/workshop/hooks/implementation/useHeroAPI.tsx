@@ -1,11 +1,11 @@
-import heroApi, { HeroParams } from '../../domain/api/hero.api'
+import { findHeroesByParams } from '../../domain/api/hero.api'
 import { Hero } from '../../domain/model/hero.model'
 import useAPI from '../template-method/useAPI'
 
 
 export default function useHeroAPI() {
-    return useAPI<HeroParams, Hero[]>({
-        callback: heroApi.findByParams,
+    return useAPI<Partial<Hero>, Hero[]>({
+        callback: findHeroesByParams,
         default: {
             params: {
                 universe: 'dragonball'

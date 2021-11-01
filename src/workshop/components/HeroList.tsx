@@ -15,7 +15,7 @@ export default function HeroList() {
     return (
         <div>
             <h1>Heroes list</h1>
-            {api.response.map(hero => <HeroRow hero={hero} />)}
+            {api.response.map(hero => <HeroRow key={hero.name} hero={hero} />)}
         </div>
     )
 }
