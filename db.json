@@ -1,0 +1,36 @@
+{
+    "heroes": [
+        {
+            "name": "Alucard",
+            "universe": "hellsing",
+            "power": "",
+            "villainEnemy": "Anderson"
+        },
+        {
+            "name": "Anderson",
+            "universe": "hellsing",
+            "power": "",
+            "villainEnemy": "Alucard"
+        },
+        {
+            "name": "Goku",
+            "universe": "dragonball",
+            "power": "kame hame ha",
+            "villainEnemy": "Frezzer"
+        },
+        {
+            "name": "Vegeta",
+            "universe": "dragonball",
+            "power": "ozaru",
+            "villainEnemy": "Frezzer"
+        }
+    ],
+    "villains": [
+        {
+            "name": "Frezzer",
+            "universe": "dragonball",
+            "power": "destruccion de planetas",
+            "heroEnemy": "Goku"
+        }
+    ]
+}
