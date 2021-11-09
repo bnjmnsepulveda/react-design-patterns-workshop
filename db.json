@@ -23,14 +23,86 @@
             "universe": "dragonball",
             "power": "ozaru",
             "villainEnemy": "Frezzer"
-        }
+        },
+        {
+            "name": "Profesor X",
+            "universe": "marvel",
+            "power": "mental control",
+            "villainEnemy": "Magneto"
+        },
+        {
+            "name": "Capitan america",
+            "universe": "marvel",
+            "power": "Escudo",
+            "villainEnemy": "Red skull"
+        },
+        {
+            "name": "Thor",
+            "universe": "marvel",
+            "power": "Stormbreaker",
+            "villainEnemy": "Loky"
+        },
+        {
+            "name": "Ironman",
+            "universe": "marvel",
+            "power": "armadura",
+            "villainEnemy": "Mandarin"
+        },
+        {
+            "name": "Ant-man",
+            "universe": "marvel",
+            "power": "encojerse",
+            "villainEnemy": "Yellow jacket"
+        },
     ],
     "villains": [
+        {
+            "name": "Nappa",
+            "universe": "dragonball",
+            "power": "",
+            "heroEnemy": "Kakaroto"
+        },
         {
             "name": "Frezzer",
             "universe": "dragonball",
             "power": "destruccion de planetas",
             "heroEnemy": "Goku"
+        },
+        {
+            "name": "Cell",
+            "universe": "dragonball",
+            "power": "create cell juniors",
+            "heroEnemy": "Gohan"
+        },
+        {
+            "name": "Majin boo",
+            "universe": "dragonball",
+            "power": "Absorbe people",
+            "heroEnemy": "Goku"
+        },
+        {
+            "name": "Broly",
+            "universe": "dragonball",
+            "power": "Haaaaaaa",
+            "heroEnemy": "Goku"
+        },
+        {
+            "name": "Thanos",
+            "universe": "marvel",
+            "power": "guantelete",
+            "heroEnemy": "Avengers"
+        },
+        {
+            "name": "Loky",
+            "universe": "marvel",
+            "power": "engaños",
+            "heroEnemy": "thor"
+        },
+        {
+            "name": "Magneto",
+            "universe": "marvel",
+            "power": "Magnetismo",
+            "heroEnemy": "Profesor X"
         }
     ]
 }
