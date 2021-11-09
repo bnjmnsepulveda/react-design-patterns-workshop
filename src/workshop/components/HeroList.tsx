@@ -1,6 +1,14 @@
 import React from 'react';
+import { Typography } from '@mui/material';
 import useHeroAPI from '../hooks/implementation/useHeroAPI';
 import HeroRow from './HeroRow';
+import Title from './Title';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemText from '@mui/material/ListItemText';
+import ListItemAvatar from '@mui/material/ListItemAvatar';
+import Avatar from '@mui/material/Avatar';
+import ImageIcon from '@mui/icons-material/Image';
 
 export default function HeroList() {
 
@@ -14,8 +22,10 @@ export default function HeroList() {
     }
     return (
         <div>
-            <h1>Heroes list</h1>
-            {api.response.map(hero => <HeroRow key={hero.name} hero={hero} />)}
+            <Title title={'Boring Heroes'} />
+            <List sx={{ width: '100%', bgcolor: 'background.paper' }}>
+                {api.response.map(hero => <HeroRow key={hero.name} hero={hero} />)}
+            </List>
         </div>
     )
 }

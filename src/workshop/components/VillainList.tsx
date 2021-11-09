@@ -1,5 +1,6 @@
 import React from 'react';
 import WithVillains from '../high-order-components/WithVillains';
+import Title from './Title';
 import VillainRow from './VillainRow';
 
 function VillainList({ villains }) {
@@ -8,7 +9,7 @@ function VillainList({ villains }) {
 
     return (
         <div>
-            <h1>Villain list</h1>
+            <Title title={'Funny Villians'} />
             {villains.map(villain => <VillainRow key={villain.name} villain={villain} />)}
         </div>
     )
