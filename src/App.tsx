@@ -4,6 +4,7 @@ import './App.css';
 import TabPanel from './workshop/components/TabPanel';
 import CssBaseline from '@mui/material/CssBaseline';
 import Container from '@mui/material/Container';
+import Paper from '@mui/material/Paper';
 
 function App() {
   return (
@@ -11,7 +12,9 @@ function App() {
       <React.Fragment>
         <CssBaseline />
         <Container maxWidth="md">
-          <TabPanel />
+          <Paper sx={{ margin: 10 }}>
+            <TabPanel />
+          </Paper>
         </Container>
       </React.Fragment>
     </div>

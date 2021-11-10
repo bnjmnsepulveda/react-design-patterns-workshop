@@ -1,4 +1,5 @@
 import React from 'react'
+import Loading from '../components/Loading';
 import useVillainAPI from '../hooks/implementation/useVillainAPI';
 
 
@@ -9,7 +10,7 @@ function WithVillains(Component) {
         const api = useVillainAPI()
 
         if (api.loading) {
-            return <h2>Loading data...</h2>
+            return <Loading />
         }
 
         if (api.error) {
