@@ -20,7 +20,7 @@ export default function VillainRow({ villain }) {
 
 function Primary({ villain }) {
     return (
-        <Typography sx={{ pl: 2 }} variant="h6" gutterBottom component="div">
+        <Typography color="primary" sx={{ pl: 2 }} variant="h6" gutterBottom component="div">
             {villain.universe}
         </Typography>
     )

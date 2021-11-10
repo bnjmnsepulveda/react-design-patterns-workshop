@@ -26,7 +26,7 @@ export default function HeroRow({ hero }) {
 
 function Primary({ hero }) {
     return (
-        <Typography sx={{ pl: 2 }} variant="h6" gutterBottom component="div">
+        <Typography color="primary" sx={{ pl: 2 }} variant="h6" gutterBottom component="div">
             {hero.universe}
         </Typography>
     )
