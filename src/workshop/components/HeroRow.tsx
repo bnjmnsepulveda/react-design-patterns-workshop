@@ -1,26 +1,26 @@
 import React from 'react'
-import Title from './Title';
-import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Avatar from '@mui/material/Avatar';
 import StarIcon from '@mui/icons-material/Star';
-import { Box, Typography } from '@mui/material';
-import Chip from '@mui/material/Chip';
+import { Box, Divider, Typography } from '@mui/material';
 import Stack from '@mui/material/Stack';
-import { styled } from '@mui/material/styles';
+import PropertyDescription from './PropertyDescription';
 
 
 export default function HeroRow({ hero }) {
 
     return (
-        <ListItem>
-            <ListItemAvatar >
-                <HeroAvatar hero={hero} />
-            </ListItemAvatar>
-            <ListItemText primary={<Primary hero={hero} />} secondary={<Secondary hero={hero} />} />
-        </ListItem>
+        <React.Fragment>
+            <ListItem>
+                <ListItemAvatar >
+                    <HeroAvatar hero={hero} />
+                </ListItemAvatar>
+                <ListItemText primary={<Primary hero={hero} />} secondary={<Secondary hero={hero} />} />
+            </ListItem>
+            <Divider />
+        </React.Fragment>
     )
 }
 
@@ -44,21 +44,6 @@ function HeroAvatar({ hero }) {
             </Typography>
         </Stack>
     )
-}
-
-function PropertyDescription({ name, description }) {
-
-    return (
-        <React.Fragment>
-            <Typography variant="subtitle2" gutterBottom component="span">
-                {name}
-            </Typography>
-            <Typography variant="body2" gutterBottom component="span">
-                {description}
-            </Typography>
-        </React.Fragment>
-    )
-
 }
 
 function Secondary({ hero }) {

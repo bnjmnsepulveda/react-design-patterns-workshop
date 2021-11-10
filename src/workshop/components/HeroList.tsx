@@ -4,11 +4,6 @@ import useHeroAPI from '../hooks/implementation/useHeroAPI';
 import HeroRow from './HeroRow';
 import Title from './Title';
 import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemText from '@mui/material/ListItemText';
-import ListItemAvatar from '@mui/material/ListItemAvatar';
-import Avatar from '@mui/material/Avatar';
-import ImageIcon from '@mui/icons-material/Image';
 
 export default function HeroList() {
 
