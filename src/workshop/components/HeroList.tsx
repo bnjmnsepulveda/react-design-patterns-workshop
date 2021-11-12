@@ -1,10 +1,10 @@
 import React from 'react';
-import { Typography } from '@mui/material';
 import useHeroAPI from '../hooks/implementation/useHeroAPI';
 import HeroRow from './HeroRow';
 import Title from './Title';
 import List from '@mui/material/List';
 import Loading from './Loading';
+import ErrorPanel from './ErrorPanel';
 
 export default function HeroList() {
 
@@ -14,7 +14,7 @@ export default function HeroList() {
         return <Loading />
     }
     if (api.error) {
-        return <h2>Error loading heores {api.error.message}</h2>
+        return <ErrorPanel message={'Heroes could not be shown'} />
     }
     return (
         <div>

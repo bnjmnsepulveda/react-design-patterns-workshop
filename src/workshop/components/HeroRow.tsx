@@ -4,7 +4,7 @@ import ListItemText from '@mui/material/ListItemText';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Avatar from '@mui/material/Avatar';
 import StarIcon from '@mui/icons-material/Star';
-import { Box, Divider, Typography } from '@mui/material';
+import { Alert, Box, Divider, Typography } from '@mui/material';
 import Stack from '@mui/material/Stack';
 import PropertyDescription from './PropertyDescription';
 
@@ -49,8 +49,10 @@ function HeroAvatar({ hero }) {
 function Secondary({ hero }) {
     return (
         <Box sx={{ pl: 2 }}>
-            <ListItemText primary={<PropertyDescription name={'Power:'} description={hero.power} />} />
-            <ListItemText primary={<PropertyDescription name={'Enemy :'} description={hero.villainEnemy} />} />
+            <Alert icon={false} severity="success">
+                <ListItemText primary={<PropertyDescription name={'Power:'} description={hero.power} />} />
+                <ListItemText primary={<PropertyDescription name={'Enemy :'} description={hero.villainEnemy} />} />
+            </Alert>
         </Box>
     )
 }

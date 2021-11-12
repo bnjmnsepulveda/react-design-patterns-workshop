@@ -1,4 +1,5 @@
 import React from 'react'
+import ErrorPanel from '../components/ErrorPanel';
 import Loading from '../components/Loading';
 import useVillainAPI from '../hooks/implementation/useVillainAPI';
 
@@ -14,7 +15,7 @@ function WithVillains(Component) {
         }
 
         if (api.error) {
-            return <h2>Error loading villains {api.error.message}</h2>
+            return <ErrorPanel message={'Villains could not be shown'} />
         }
 
         return <Component villains={api.villains} {...props} />

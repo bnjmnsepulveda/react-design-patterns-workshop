@@ -2,6 +2,7 @@ import React from 'react'
 import { Avatar, Box, Divider, ListItem, ListItemAvatar, ListItemText, Stack, Typography } from '@mui/material'
 import LocalFireDepartmentIcon from '@mui/icons-material/LocalFireDepartment';
 import PropertyDescription from './PropertyDescription';
+import Alert from '@mui/material/Alert';
 
 export default function VillainRow({ villain }) {
     return (
@@ -45,8 +46,10 @@ function VillainAvatar({ villain }) {
 function Secondary({ villain }) {
     return (
         <Box sx={{ pl: 2 }}>
-            <ListItemText primary={<PropertyDescription name={'Power:'} description={villain.power} />} />
-            <ListItemText primary={<PropertyDescription name={'Enemy :'} description={villain.heroEnemy} />} />
+            <Alert icon={false} severity="success">
+                <ListItemText primary={<PropertyDescription name={'Power:'} description={villain.power} />} />
+                <ListItemText primary={<PropertyDescription name={'Enemy :'} description={villain.heroEnemy} />} />
+            </Alert>
         </Box>
     )
 }
