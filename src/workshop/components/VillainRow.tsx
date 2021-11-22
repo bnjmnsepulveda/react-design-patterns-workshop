@@ -11,7 +11,7 @@ export default function VillainRow({ villain }) {
                 <ListItemAvatar >
                     <VillainAvatar villain={villain} />
                 </ListItemAvatar>
-                <ListItemText primary={<Primary villain={villain} />} secondary={<Secondary villain={villain} />} />
+                <ListItemText disableTypography={true} primary={<Primary villain={villain} />} secondary={<Secondary villain={villain} />} />
             </ListItem>
             <Divider />
         </React.Fragment>

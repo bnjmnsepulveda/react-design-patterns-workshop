@@ -7,9 +7,7 @@ export default function useHeroAPI() {
     return useAPI<Partial<Hero>, Hero[]>({
         callback: findHeroesByParams,
         default: {
-            params: {
-                universe: 'dragonball'
-            },
+            params: {},
             response: []
         }
     })

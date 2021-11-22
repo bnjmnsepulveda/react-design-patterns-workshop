@@ -13,11 +13,11 @@ export default function HeroRow({ hero }) {
 
     return (
         <React.Fragment>
-            <ListItem>
+            <ListItem key={hero.name}>
                 <ListItemAvatar >
                     <HeroAvatar hero={hero} />
                 </ListItemAvatar>
-                <ListItemText primary={<Primary hero={hero} />} secondary={<Secondary hero={hero} />} />
+                <ListItemText disableTypography={true} primary={<Primary hero={hero} />} secondary={<Secondary hero={hero} />} />
             </ListItem>
             <Divider />
         </React.Fragment>
@@ -26,9 +26,20 @@ export default function HeroRow({ hero }) {
 
 function Primary({ hero }) {
     return (
-        <Typography color="primary" sx={{ pl: 2 }} variant="h6" gutterBottom component="div">
+        <Typography color="primary" sx={{ pl: 2 }} variant="h6" gutterBottom component="p">
             {hero.universe}
         </Typography>
+    )
+}
+
+function Secondary({ hero }) {
+    return (
+        <Box sx={{ pl: 2 }}>
+            <Alert icon={false} severity="success">
+                <ListItemText primary={<PropertyDescription name={'Power:'} description={hero.power} />} />
+                <ListItemText primary={<PropertyDescription name={'Enemy :'} description={hero.villainEnemy} />} />
+            </Alert>
+        </Box>
     )
 }
 
@@ -43,16 +54,5 @@ function HeroAvatar({ hero }) {
                 {hero.name}
             </Typography>
         </Stack>
-    )
-}
-
-function Secondary({ hero }) {
-    return (
-        <Box sx={{ pl: 2 }}>
-            <Alert icon={false} severity="success">
-                <ListItemText primary={<PropertyDescription name={'Power:'} description={hero.power} />} />
-                <ListItemText primary={<PropertyDescription name={'Enemy :'} description={hero.villainEnemy} />} />
-            </Alert>
-        </Box>
     )
 }

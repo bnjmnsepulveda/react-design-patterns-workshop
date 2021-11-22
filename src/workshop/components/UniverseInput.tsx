@@ -4,15 +4,19 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
+import useUniverseAPI from '../hooks/implementation/useUniverseAPI';
 
 
 
-export default function UniverseInput({ universes }) {
+export default function UniverseInput({ onChange }) {
 
+    const universes = useUniverseAPI()
     const [universe, setUniverse] = React.useState('');
 
     const handleChange = (event: SelectChangeEvent) => {
-        setUniverse(event.target.value as string);
+        const selected = event.target.value as string
+        setUniverse(selected)
+        onChange(selected)
     };
 
     return (
@@ -26,7 +30,7 @@ export default function UniverseInput({ universes }) {
                     label="Universe"
                     onChange={handleChange}
                 >
-                    {universes.map(universe => <MenuItem value={universe}>{universe}</MenuItem>)}
+                    {universes.map(universe => <MenuItem key={universe} value={universe}>{universe}</MenuItem>)}
                 </Select>
             </FormControl>
         </Box>

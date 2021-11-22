@@ -6,12 +6,14 @@ import List from '@mui/material/List';
 import Loading from './Loading';
 import ErrorPanel from './ErrorPanel';
 import UniverseInput from './UniverseInput';
-import useUniverses from '../hooks/implementation/useUniverses';
 
 export default function HeroList() {
 
     const api = useHeroAPI()
-    const universes = useUniverses()
+
+    const onChangeUniverse = value => {
+        api.request({ universe: value })
+    }
 
     if (api.loading) {
         return <Loading />
@@ -22,7 +24,7 @@ export default function HeroList() {
     return (
         <div>
             <Title title={'Boring Heroes'} />
-            <UniverseInput universes={universes} />
+            <UniverseInput onChange={onChangeUniverse} />
             <List sx={{ width: '100%', bgcolor: 'background.paper' }}>
                 {api.response.map(hero => <HeroRow key={hero.name} hero={hero} />)}
             </List>
