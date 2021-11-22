@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 
 interface Config<PARAMS, RESPONSE> {
-    callback: (params: PARAMS) => Promise<RESPONSE>;
+    callback: (params?: PARAMS) => Promise<RESPONSE>;
     default?: {
         params: PARAMS
         response: RESPONSE
@@ -18,7 +18,7 @@ interface API<PARAMS, RESPONSE> {
 }
 
 
-export default function useAPI<PARAMS, RESPONSE>(config: Config<PARAMS, RESPONSE>): API<PARAMS, RESPONSE> {
+export default function useAPI<PARAMS = {}, RESPONSE = {}>(config: Config<PARAMS, RESPONSE>): API<PARAMS, RESPONSE> {
 
     const [loading, setLoading] = useState(true)
     const [response, setResponse] = useState<RESPONSE>(config.default.response)
