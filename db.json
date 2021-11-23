@@ -3,13 +3,13 @@
         {
             "name": "Alucard",
             "universe": "hellsing",
-            "power": "",
+            "power": "regenerator",
             "villainEnemy": "Anderson"
         },
         {
-            "name": "Anderson",
+            "name": "Alexander Anderson",
             "universe": "hellsing",
-            "power": "",
+            "power": "powerful vampire",
             "villainEnemy": "Alucard"
         },
         {
@@ -33,7 +33,7 @@
         {
             "name": "Capitan america",
             "universe": "marvel",
-            "power": "Escudo",
+            "power": "Shield",
             "villainEnemy": "Red skull"
         },
         {
@@ -45,27 +45,69 @@
         {
             "name": "Ironman",
             "universe": "marvel",
-            "power": "armadura",
+            "power": "Armors",
             "villainEnemy": "Mandarin"
         },
         {
             "name": "Ant-man",
             "universe": "marvel",
-            "power": "encojerse",
+            "power": "Pym particles",
             "villainEnemy": "Yellow jacket"
+        },
+        {
+            "name": "Pegasus Seiya",
+            "universe": "saint-seiya",
+            "power": "pegasus ryu sei ken ",
+            "villainEnemy": "hades"
+        },
+        {
+            "name": "Dragon Shiryu",
+            "universe": "saint-seiya",
+            "power": "Rozan sho ryu ha",
+            "villainEnemy": "cancer death mask"
+        },
+        {
+            "name": "Leo Aiolia",
+            "universe": "saint-seiya",
+            "power": "Lighting Plasma",
+            "villainEnemy": "Virgo Shaka"
+        },
+        {
+            "name": "Obi Wan Kenobi",
+            "universe": "star wars",
+            "power": "Phantom appearance",
+            "villainEnemy": "Darth Vader"
+        },
+        {
+            "name": "Anakin Skywalker",
+            "universe": "star wars",
+            "power": "Space pilot",
+            "villainEnemy": "Count dooku"
+        },
+        {
+            "name": "Han solo",
+            "universe": "star wars",
+            "power": "Millenium falcon owner",
+            "villainEnemy": "Jabba de hutt"
+        },
+        {
+            "name": "R2D2",
+            "universe": "star wars",
+            "power": "fix any wea",
+            "villainEnemy": "Electric shock"
         }
     ],
     "villains": [
         {
             "name": "Nappa",
             "universe": "dragonball",
-            "power": "",
+            "power": "Super blast",
             "heroEnemy": "Kakaroto"
         },
         {
             "name": "Frezzer",
             "universe": "dragonball",
-            "power": "destruccion de planetas",
+            "power": "Mortal sphere",
             "heroEnemy": "Goku"
         },
         {
@@ -77,7 +119,7 @@
         {
             "name": "Majin boo",
             "universe": "dragonball",
-            "power": "Absorbe people",
+            "power": "Absorbe warriors",
             "heroEnemy": "Goku"
         },
         {
@@ -89,20 +131,56 @@
         {
             "name": "Thanos",
             "universe": "marvel",
-            "power": "guantelete",
+            "power": "infinity stones",
             "heroEnemy": "Avengers"
         },
         {
-            "name": "Loky",
+            "name": "Loki",
             "universe": "marvel",
-            "power": "engaños",
+            "power": "Liar",
             "heroEnemy": "thor"
         },
         {
             "name": "Magneto",
             "universe": "marvel",
-            "power": "Magnetismo",
+            "power": "Mutanr rebellion",
             "heroEnemy": "Profesor X"
+        },
+        {
+            "name": "Gemini Saga",
+            "universe": "saint-seiya",
+            "power": "Galaxian Explosion",
+            "heroEnemy": "Athena"
+        },
+        {
+            "name": "Cancer Deathmask",
+            "universe": "saint-seiya",
+            "power": "Seki Shiki Meikai Ha",
+            "heroEnemy": "Dragon Shiryu"
+        },
+        {
+            "name": "Phoenix Ikki",
+            "universe": "saint-seiya",
+            "power": "Fiery Phoenix",
+            "heroEnemy": "Bronze saints"
+        },
+        {
+            "name": "Darth Vader",
+            "universe": "star wars",
+            "power": "Dark Side and benevolent boss",
+            "heroEnemy": "Luke Skywalker"
+        },
+        {
+            "name": "Rey Palpatine",
+            "universe": "star wars",
+            "power": "Destroy start wars franchise",
+            "heroEnemy": "Star wars fans"
+        },
+        {
+            "name": "Darth plagueis the wis",
+            "universe": "star wars",
+            "power": "create life with the force",
+            "heroEnemy": "Jedis"
         }
     ]
 }
