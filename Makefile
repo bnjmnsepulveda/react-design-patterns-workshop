@@ -12,3 +12,4 @@ push-to-master:
 	git pull origin master
 	git merge $(b)
 	git push origin master
+	git checkout $(b)
