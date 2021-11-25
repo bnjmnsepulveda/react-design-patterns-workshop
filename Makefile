@@ -6,6 +6,9 @@ run:
 set-node12:
 	nvm use 12
 
+install-server:
+	npm install -g json-server
+
 run-server:
 	json-server --watch db.json
 
