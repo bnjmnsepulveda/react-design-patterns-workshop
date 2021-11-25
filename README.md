@@ -1,12 +1,13 @@
 # Functional Design Patterns Workshop
 
-Implementacion y ejemplo de patrones de diseño
+Implementacion y ejemplo de patrones de diseño en Programacion Funcional
 
+## [https://bnjmnsepulveda.github.io/react-design-patterns-workshop/](https://bnjmnsepulveda.github.io/react-design-patterns-workshop/)
 
 * Template Method (Again )
 * High Order Components
 
-## ejecución proyecto
+## Levantar la aplicación
 
 ```bash
 
