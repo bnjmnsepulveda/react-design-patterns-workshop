@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-design-patterns-workshop/static/css/main.a617e044.chunk.css",
+    "main.js": "/react-design-patterns-workshop/static/js/main.9f61db72.chunk.js",
+    "main.js.map": "/react-design-patterns-workshop/static/js/main.9f61db72.chunk.js.map",
+    "runtime-main.js": "/react-design-patterns-workshop/static/js/runtime-main.c00892a3.js",
+    "runtime-main.js.map": "/react-design-patterns-workshop/static/js/runtime-main.c00892a3.js.map",
+    "static/js/2.d3f84edc.chunk.js": "/react-design-patterns-workshop/static/js/2.d3f84edc.chunk.js",
+    "static/js/2.d3f84edc.chunk.js.map": "/react-design-patterns-workshop/static/js/2.d3f84edc.chunk.js.map",
+    "static/js/3.09d38195.chunk.js": "/react-design-patterns-workshop/static/js/3.09d38195.chunk.js",
+    "static/js/3.09d38195.chunk.js.map": "/react-design-patterns-workshop/static/js/3.09d38195.chunk.js.map",
+    "index.html": "/react-design-patterns-workshop/index.html",
+    "static/css/main.a617e044.chunk.css.map": "/react-design-patterns-workshop/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.d3f84edc.chunk.js.LICENSE.txt": "/react-design-patterns-workshop/static/js/2.d3f84edc.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c00892a3.js",
+    "static/js/2.d3f84edc.chunk.js",
+    "static/css/main.a617e044.chunk.css",
+    "static/js/main.9f61db72.chunk.js"
+  ]
+}
